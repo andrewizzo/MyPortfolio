@@ -1,0 +1,246 @@
+<div class="container-fluid p-0">
+    <div class="d-flex flex-column">
+
+        <!-- navbar -->
+        <div #navbar class="bg-black w-100 h-100 d-flex flex-row" id="navbar">
+            <div class="p-2 align-items-center d-flex">
+                <div class="d-flex flex-row gap-2 align-items-center">
+                    <img src="../../assets/coding.png" class="d-flex align-items-center">
+                    <span style="font-family: 'calligrafy',sans-serif;font-size: 320%;" class="text-white">Andrea
+                        Izzo</span>
+                </div>
+            </div>
+            <div class="d-flex gap-4 w-75 justify-content-end">
+                <a (click)="scrollToSection('info')" style="font-family: 'movieFilm',sans-serif; font-size: 450%;"
+                    class="text-white animated-underline">Info</a>
+                <a (click)="scrollToSection('skills')" style="font-family: 'movieFilm',sans-serif; font-size: 450%;"
+                    class="text-white animated-underline">Skills</a>
+                <a (click)="scrollToSection('projects')" style="font-family: 'movieFilm',sans-serif; font-size: 450%;"
+                    class="text-white animated-underline">Projects</a>
+                <a (click)="scrollToSection('contacts')" style="font-family: 'movieFilm',sans-serif; font-size: 450%;"
+                    class="text-white animated-underline">Contacts</a>
+            </div>
+        </div>
+        <div class="container-fluid p-0 d-flex flex-column justify-content-center align-items-center">
+            <div class="container-fluid imageBackGround1 w-100 ">
+                <!-- <div class="d-flex justify-content-center " >
+                    <img src="../../assets/down.png" alt="">
+                </div> -->
+                <div class="container-fluid d-flex justify-content-center align-items-center h-100 flex-column">
+                    <span class="" style="font-family: 'noisy',sans-serif;font-size: 500%;">
+                        < Hello World>
+                    </span>
+                    <span style="font-family: 'noisy',sans-serif;font-size: 200%;">Junior <span
+                            class="text-danger">Front-end</span> Developer</span>
+                </div>
+            </div>
+
+            <!-- div info -->
+            <div #infoDiv id="info" class="container-fluid bg-black">
+                <div class="d-flex justify-content-center p-5">
+                    <a style="font-family: 'movieFilm',sans-serif; font-size: 550%;"
+                        class="text-white animated-underline">Info</a>
+                </div>
+            </div>
+            <div class="container-fluid imageBackGround3 d-flex w-100">
+                <div class="container d-flex justify-content-center align-items-center flex-column customGap">
+                    <div class="bg-black w-25 p-2 border border-2 border-white rounded">
+                        <img src="../../assets/Image (1).jpg" class="w-100 rounded">
+                    </div>
+                    <div class="w-100 bg-black rounded p-2 border border-2 border-white text-center">
+                        <span style="font-family: 'noisy',sans-serif; font-size: 200%;" class="text-white">"Hello, I'm
+                            Andrea Izzo, a passionate Junior Front-End Developer with a keen eye for creating dynamic
+                            and responsive web applications. Skilled in HTML, CSS, JavaScript, and modern frameworks
+                            like Angular and React, I bring a strong foundation in front-end development and a
+                            dedication to continuous learning and improvement. Explore my projects and see how I turn
+                            ideas into engaging user experiences."</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- div skills -->
+            <div #skillsDiv id="skills" class="container-fluid bg-black">
+                <div class="d-flex justify-content-center p-5">
+                    <a style="font-family: 'movieFilm',sans-serif; font-size: 550%;"
+                        class="text-white animated-underline">Skills</a>
+                </div>
+            </div>
+            <div class="container-fluid imageBackGround2 d-flex w-100">
+                <div class="container d-flex flex-row justify-content-center align-items-center gap-5">
+                    <div class="">
+                        <div class="bg-black p-2 rounded border border-2 border-white">
+                            <img src="../../assets/1024px-HTML5_Badge 2.png" class="customSizeImg divSkills">
+                        </div>
+                    </div>
+                    <div>
+                        <div class="bg-black p-2 rounded border border-2 border-white">
+                            <img src="../../assets/CSS3_logo 2.png" class="customSizeImg divSkills">
+                        </div>
+                    </div>
+                    <div>
+                        <div class="bg-black p-2 rounded border border-2 border-white">
+                            <img src="../../assets/Unofficial_JavaScript_logo_2 2.png" class="customSizeImg divSkills">
+                        </div>
+                    </div>
+                    <div>
+                        <div class="bg-black p-2 rounded border border-2 border-white">
+                            <img src="../../assets/Typescript_logo_2020 2.png" class="customSizeImg divSkills">
+                        </div>
+                    </div>
+                    <div>
+                        <div class="bg-black p-2 rounded border border-2 border-white">
+                            <img src="../../assets/Angular_full_color_logo.png" class="customSizeImg divSkills">
+                        </div>
+                    </div>
+                    <div>
+                        <div class="bg-black p-2 rounded border border-2 border-white">
+                            <img src="../../assets/React-icon 2.png" class="customSizeImg divSkills">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- div progetti -->
+            <div #projectsDiv class="container-fluid bg-black" id="projects">
+                <div class="d-flex justify-content-center p-5">
+                    <a style="font-family: 'movieFilm',sans-serif; font-size: 550%;"
+                        class="text-white animated-underline">Projects</a>
+                </div>
+            </div>
+            <div class="container-fluid imageBackGround4 d-flex justify-content-center">
+                <div class="d-flex flex-column justify-content-center align-items-center gap-4 p-3">
+                    <div
+                        class="bg-black d-flex flex-column justify-content-center align-items-center gap-4 p-3 border border-2 border-white rounded">
+                        <div class="d-flex flex-row gap-5 ">
+                            <div class="bg-black rounded">
+                                <a class="d-flex flex-column text-decoration-none rounded border border-2 border-dark"
+                                    href="https://github.com/andrewizzo/PokeDexProje/tree/develop">
+                                    <img src="../../assets/copertinaPokemon.png" class="customHoverButton rounded-top">
+                                    <div class="d-flex justify-content-center">
+                                        <span class="text-white p-2 animated-underline"
+                                            style="font-family: 'caviar',sans-serif; font-size: 130%;">Progetto Pokemon
+                                            AngularJs</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="bg-black rounded">
+                                <a class="d-flex flex-column text-decoration-none rounded border border-2 border-dark"
+                                    href="">
+                                    <img src="../../assets/copertinaPiastrella.png"
+                                        class="customHoverButton rounded-top">
+                                    <div class="d-flex justify-content-center">
+                                        <span class="text-white d-flex p-2 animated-underline"
+                                            style="font-family: 'caviar',sans-serif; font-size: 130%;">Progetto
+                                            Piastrella
+                                            AngularJs</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="bg-black rounded">
+                                <a class="text-decoration-none d-flex flex-column rounded border border-2 border-dark"
+                                    href="https://github.com/andrewizzo/calcolatore-piastrelle">
+                                    <img src="../../assets/copertinaMattonella.png"
+                                        class="customHoverButton rounded-top">
+                                    <div class="d-flex justify-content-center">
+                                        <span class="text-white p-2 animated-underline"
+                                            style="font-family: 'caviar',sans-serif; font-size: 130%;">Progetto
+                                            Mattonella
+                                            ReactJsx</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div>
+                            <a href="https://github.com/andrewizzo" class="text-white pb-3 animated-underline "
+                                style="font-family: 'noisy',sans-serif; font-size: 200%;">GitHub Home Page</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- div contatti -->
+            <div #contactsDiv id="contacts" class="container-fluid bg-black">
+                <div class="d-flex justify-content-center p-5">
+                    <a style="font-family: 'movieFilm',sans-serif; font-size: 550%;"
+                        class="text-white animated-underline">Contacts</a>
+                </div>
+            </div>
+            <div class="container-fluid imageBackGround5 d-flex justify-content-center">
+                <div class="d-flex flex-column justify-content-center align-items-center w-75">
+                    <div
+                        class="d-flex flex-column justify-content-center align-items-center bg-black rounded border border-2 border-white p-4 w-50">
+                        <div class="d-flex flex-row gap-4 p-4 w-100">
+                            <div class="d-flex w-100 flip-card">
+                                <div class="d-flex flex-row gap-4 w-100 justify-content-center flip-card-inner">
+                                    <div class="border border-2 border-white rounded w-100 flip-card-front d-flex align-items-center p-3">
+                                        <span style="font-family: 'caviar',sans-serif; font-size: 200%;"
+                                            class="text-white w-100">Number</span>
+                                        <img src="../../assets/cardFlip.png" alt="">
+                                    </div>
+                                    <div class="border border-2 border-white p-3 rounded w-100 flip-card-back d-flex align-items-center justify-content-between">
+                                        <span style="font-family: 'caviar',sans-serif; font-size: 200%;"
+                                            class="text-white animated-underline pb-1">3928161662</span>
+                                        <img src="../../assets/cardFlip.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex w-100 flip-card">
+                                <div class="d-flex flex-row gap-4 w-100 justify-content-center flip-card-inner">
+                                    <div class="border border-2 border-white rounded w-100 flip-card-front d-flex align-items-center p-3">
+                                        <span style="font-family: 'caviar',sans-serif; font-size: 200%;"
+                                            class="text-white w-100">Email</span>
+                                        <img src="../../assets/cardFlip.png" alt="">
+                                    </div>
+                                    <div class="border border-2 border-white rounded w-100 flip-card-back d-flex align-items-center p-3 justify-content-between">
+                                        <a style="font-family: 'caviar',sans-serif; font-size: 200%;"
+                                            class="text-white animated-underline pb-1">{{myNumber}}</a>
+                                        <img src="../../assets/cardFlip.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="d-flex flex-column customDivForm rounded gap-4 justify-content-center align-items-center">
+                            <div class="d-flex flex-column gap-3 w-100">
+                                <input type="text" name="" id="" class="customBorder w-100 p-2"
+                                    style="font-family: 'caviar',sans-serif; font-size: 200%;">
+                                <textarea name="" id="" class="customBorder p-2"
+                                    style="height: 200px;font-family: 'caviar',sans-serif; font-size: 200%"></textarea>
+                            </div>
+                            <div
+                                class="d-flex justify-content-center m-3 p-3 border border-2 border-white w-50 align-items-center rounded">
+                                <div class="w-100 d-flex justify-content-center">
+                                    <button class="bg-transparent border-0 w-100"><span
+                                            style="font-family: 'caviar',sans-serif; font-size: 190%;"
+                                            class="text-white animated-underline p-3">Send Email</span></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- div form -->
+            <div #contactsDiv id="contacts" class="container-fluid bg-black d-flex justify-content-center">
+                <div class="d-flex justify-content-start p-3 w-100">
+                    <div class="d-flex justify-content-evenly w-50 p-4">
+                        <div class="d-flex align-items-center">
+                            <span style="font-family: 'caviar',sans-serif; font-size: 190%;"
+                            class="text-white">Designed By</span>
+                        </div>
+                        <div>
+                            <span style="font-family: 'noisy',sans-serif; font-size: 300%;" class="text-white">Andrew Izzo ©</span>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <span style="font-family: 'caviar',sans-serif; font-size: 190%;"
+                            class="text-white">All right reserved</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-end px-5 py-3 align-items-center" >
+                    <button class="bg-transparent border-0 h-50" (click)="scrollToSection('navbar')"><img src="../../assets/up-arrow.png" class="w-100 imgFoot"></button>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</div>

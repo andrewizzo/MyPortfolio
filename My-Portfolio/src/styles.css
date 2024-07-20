@@ -1,1 +1,54 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: 'noisy';
+    src: url('/assets/fonts/NoisyWalk.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'calligrafy';
+    src: url('./assets/fonts/Saudagar.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'movieFilm';
+    src: url('./assets/fonts/MovLette.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'caviar';
+    src: url('./assets/fonts/caviar_dreams/CaviarDreams.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html,body{
+    margin: 0;
+    padding: 0;
+}
+
+/* .scrollable-container {
+    max-height: 100%;
+    overflow-y: auto;
+}
+
+.scrollable-container::-webkit-scrollbar {
+    width: 5px;
+    border-radius: 30px;
+
+}
+
+.scrollable-container::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 5px;
+}
+
+.scrollable-container::-webkit-scrollbar-track {
+    background-color: #eee;
+    border-radius: 100px;
+} */

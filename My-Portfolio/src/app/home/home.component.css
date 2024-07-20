@@ -1,0 +1,156 @@
+.imageBackGround1{
+    background-image: url('../../assets/matthew-henry-VviFtDJakYk-unsplash.jpg');
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.imageBackGround2{
+    background-image: url('../../assets/arturo-castaneyra-7laIG_Xv5FI-unsplash.jpg');
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.imageBackGround3{
+    background-image: url('../../assets/vincent-erhart-Y2Tfj9I7SAE-unsplash.jpg');
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.imageBackGround4{
+    background-image: url('../../assets/leo-bayard-JJgp3Niq8ec-unsplash.jpg');
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.imageBackGround5{
+    background-image: url('../../assets/yuika-takamura-qqUQPt7Jobo-unsplash.jpg');
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.customHeigthImgProfile{
+    max-height: 290px;
+    background-size: contain;
+}
+
+.bgCustomDiv{
+    background-color: #625A66;
+}
+
+.bgCustomDivHeigth{
+    max-height: 275px;
+    background-color: #625A66;
+}
+
+.customSizeImg{
+    width: 16vh;
+    background-size: contain;
+}
+
+.customSieImgProfile{
+    width: 20%;
+}
+
+.customHoverButton:hover{
+    width: 370px;
+    height: 370px;
+}
+
+.customGap{
+    display: flex;
+    gap: 20%;
+}
+
+.customDivForm{
+    width: 95%;
+}
+
+.customBorder{
+    width: 100%;
+    margin: 8px 0;
+    border-radius: 10px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+}
+
+.customBorder:focus{
+    border: 3px solid red;
+}
+
+.animated-underline{
+    position: relative;
+    text-decoration: none;
+}
+
+.animated-underline::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 4%;
+    bottom: 20%;
+    left: 0;
+    background-color: #ff0000;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.animated-underline:hover::after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.flip-card{
+    transition: 0.3;
+    /* position: relative; */
+    
+}
+
+.flip-card:hover > .flip-card-inner{
+    /* cursor: pointer; */
+    transform: rotateY(180deg);
+}
+
+.flip-card-inner{
+    /* position: absolute; */
+    transform-style: preserve-3d;
+    transition: transform 1000ms;
+    position: relative;
+    
+}
+
+.flip-card-front , .flip-card-back{
+    /* position: absolute; */
+    backface-visibility: hidden;
+}
+
+.flip-card-front{
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.flip-card-back{
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+}
+
+.imgFoot{
+    object-fit: contain;
+}
+
+.divSkills:hover{
+    width:  18vh ;
+}
