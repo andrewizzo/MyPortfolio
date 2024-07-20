@@ -52,18 +52,8 @@
     background-color: #625A66;
 }
 
-.customSizeImg{
-    width: 16vh;
-    background-size: contain;
-}
-
 .customSieImgProfile{
     width: 20%;
-}
-
-.customHoverButton:hover{
-    width: 370px;
-    height: 370px;
 }
 
 .customGap{
@@ -81,12 +71,16 @@
     border-radius: 10px;
     box-sizing: border-box;
     background-color: #ffffff;
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
+    /* -webkit-transition: 0.5s;
+    transition: 0.5s; */
     outline: none;
 }
 
 .customBorder:focus{
+    border: 3px solid red;
+}
+
+.customBorder:hover{
     border: 3px solid red;
 }
 
@@ -151,6 +145,51 @@
     object-fit: contain;
 }
 
-.divSkills:hover{
-    width:  18vh ;
+.cursorPointer{
+    cursor: pointer;
+}
+
+@media (min-width:768px) {
+    .skills-container{
+        flex-direction: row;
+    }
+
+    .divSkills{
+        width: 16vh;
+        background-size: contain;
+    }
+
+    .divSkills:hover{
+        width: 18vh;
+        background-size: contain;
+    }
+
+    .customHoverButton:hover{
+        width: 31vh;
+    }
+
+    .customWidthForm{
+        width: 50%;
+    }
+}
+
+@media (max-width:767.98px) {
+    .skills-container{
+        flex-direction: column;
+        width: 10vh;
+        background-size: contain;
+    }
+
+    .divSkills{
+        width: 10vh;
+        background-size: contain;
+    }
+
+    .customHoverButton{
+        width: 23vh;
+    }
+
+    .customWidthForm{
+        width: 100%;
+    }
 }

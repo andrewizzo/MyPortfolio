@@ -13,6 +13,7 @@ export class HomeComponent {
   @ViewChild('navbar') footButton : ElementRef<HTMLElement> | undefined;
 
   myNumber : string = 'aizzo450@gmail.com'
+  isOpenDiv : boolean = false;
 
   constructor(private el : ElementRef){}
 
@@ -34,5 +35,9 @@ export class HomeComponent {
     if (element) {
       element.scrollIntoView({behavior:'smooth',block:'start'})
     }
+  }
+
+  openDiv(){
+    this.isOpenDiv = !this.isOpenDiv
   }
 }
