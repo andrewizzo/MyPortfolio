@@ -1,0 +1,38 @@
+<div class="container-fluid m-0 p-0">
+    <!-- navbar -->
+    <div #navbar class="bg-black w-100 d-flex flex-row justify-content-between p-2" id="navbar">
+        <div class="align-items-center d-flex fs-1 w-100">
+            <div class="d-flex flex-row gap-2 align-items-center">
+                <!-- <img src="../../assets/coding.png" class="d-flex align-items-center"> -->
+                <span class="text-white font-custom-calligrafy">Andrea
+                    Izzo</span>
+            </div>
+        </div>
+        <div class="d-none d-lg-flex gap-4 w-100 justify-content-center fs-1">
+            <a (click)="scrollToSection('info')" class="text-white animated-underline cursor-pointer font-custom-movieFilm h-100">Info</a>
+            <a (click)="scrollToSection('skills')" class="text-white animated-underline cursor-pointer font-custom-movieFilm">Skills</a>
+            <a (click)="scrollToSection('projects')" class="text-white animated-underline cursor-pointer font-custom-movieFilm">Projects</a>
+            <a (click)="scrollToSection('contacts')" class="text-white animated-underline cursor-pointer font-custom-movieFilm">Contacts</a>
+        </div>
+        <div class="d-flex d-lg-none justify-content-end align-items-">
+            <div class=" d-flex justify-content-center align-items-center">
+                <button class="bg-transparent border-0" (click)="openDiv()"><img src="../../../assets/hamburger.png"
+                        class="customHamburgerMenu w-75"></button>
+            </div>
+        </div>
+    </div>
+    <div class="bg-black d-flex d-xl-none flex-column w-100 fs-1" *ngIf="isOpenDiv">
+        <div class="d-flex justify-content-center align-items-center p-2 customBorder bg-black">
+            <a (click)="scrollToSection('info')" class="border-0 bg-transparent text-decoration-none customHeight text-white animated-underline d-flex align-items-center font-custom-movieFilm">Info</a>
+        </div>
+        <div class="d-flex justify-content-center align-items-center p-2 customBorder bg-black">
+            <a (click)="scrollToSection('skills')" class="text-decoration-none text-white customHeight d-flex align-items-center animated-underline font-custom-movieFilm">Skills</a>
+        </div>
+        <div class="d-flex justify-content-center align-items-center p-2 customBorder bg-black">
+            <a (click)="scrollToSection('projects')" class="text-decoration-none text-white customHeight d-flex align-items-center animated-underline font-custom-movieFilm">Projects</a>
+        </div>
+        <div class="d-flex justify-content-center align-items-center p-2 customBorder bg-black">
+            <a (click)="scrollToSection('contacts')" class="text-decoration-none text-white customHeight d-flex align-items-center animated-underline font-custom-movieFilm">Contacts</a>
+        </div>
+    </div>
+</div>
