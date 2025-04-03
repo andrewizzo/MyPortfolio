@@ -21,10 +21,6 @@
     gap: 20%;
 }
 
-.customDivForm{
-    width: 95%;
-}
-
 .flip-card{
     transition: 0.3;
     /* position: relative; */
@@ -61,50 +57,4 @@
 
 .imgFoot{
     object-fit: contain;
-}
-
-
-@media (min-width:768px) {
-    .skills-container{
-        flex-direction: row;
-    }
-
-    .divSkills{
-        width: 50%;
-        background-size: contain;
-    }
-
-    .divSkills:hover{
-        width: 18vh;
-        background-size: contain;
-    }
-
-    .customHoverButton:hover{
-        width: 31vh;
-    }
-
-    .customWidthForm{
-        width: 50%;
-    }
-}
-
-@media (max-width:767.98px) {
-    .skills-container{
-        flex-direction: column;
-        width: 10vh;
-        background-size: contain;
-    }
-
-    .divSkills{
-        width: 10vh;
-        background-size: contain;
-    }
-
-    .customHoverButton{
-        width: 23vh;
-    }
-
-    .customWidthForm{
-        width: 100%;
-    }
 }

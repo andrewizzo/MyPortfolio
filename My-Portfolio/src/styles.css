@@ -39,12 +39,22 @@ html,body{
 
 .font-custom-noisy{
     font-family: 'noisy';
+    font-size: 400%;
+}
+
+.font-custom-noisy2{
+    font-family: 'noisy';
     font-size: 100%;
 }
 
 .font-custom-calligrafy{
     font-family: 'calligrafy';
     font-size: 130%;
+}
+
+.font-custom-caviar{
+    font-family: 'caviar';
+    font-size: 100%;
 }
 
 .imageBackGround1{
@@ -127,4 +137,49 @@ html,body{
 
 .customBorder:hover{
     border: 3px solid red;
+}
+
+@media (min-width:768px) {
+    .skills-container{
+        flex-direction: row;
+    }
+
+    .divSkills{
+        width: 50%;
+        background-size: contain;
+    }
+
+    .divSkills:hover{
+        width: 18vh;
+        background-size: contain;
+    }
+
+    .customHoverButton:hover{
+        width: 31vh;
+    }
+
+    .customWidthForm{
+        width: 50%;
+    }
+}
+
+@media (max-width:767.98px) {
+    .skills-container{
+        flex-direction: column;
+        width: 10vh;
+        background-size: contain;
+    }
+
+    .divSkills{
+        width: 10vh;
+        background-size: contain;
+    }
+
+    .customHoverButton{
+        width: 23vh;
+    }
+
+    .customWidthForm{
+        width: 100%;
+    }
 }
