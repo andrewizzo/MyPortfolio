@@ -6,10 +6,11 @@ import { ProjectsComponent } from "../components/projects/projects.component";
 import { SkillsComponent } from "../components/skills/skills.component";
 import { NavbarComponent } from "../components/navbar/navbar.component";
 import { FooterComponent } from "../components/footer/footer.component";
+import { FormsModule } from "@angular/forms";
 
 @NgModule({
   declarations:[InfoComponent,ContactsComponent,ProjectsComponent,SkillsComponent,NavbarComponent,FooterComponent],
-  imports:[CommonModule,],
+  imports:[CommonModule,FormsModule],
   exports:[InfoComponent,ContactsComponent,ProjectsComponent,SkillsComponent,NavbarComponent,FooterComponent]
 })
 export class SharedModule{}
