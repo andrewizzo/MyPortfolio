@@ -144,26 +144,43 @@ html,body{
         flex-direction: row;
     }
 
-    .divSkills{
-        width: 50%;
-        background-size: contain;
+    /* .divSkills{
+        width: 100%;
     }
 
     .divSkills:hover{
-        width: 18vh;
-        background-size: contain;
+        width: 200%;
+    } */
+
+    .divSkills {
+        transition: transform 0.5s ease, box-shadow 0.3s ease;
+      }
+      
+    .divSkills:hover {
+        transform: scale(1.5);
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.6);  
     }
 
-    .customHoverButton:hover{
-        width: 31vh;
+    .divProjects{
+        transition: transform 0.5s ease, box-shadow 0.5s ease;
     }
 
-    .customWidthForm{
-        width: 50%;
+    .divProjects:hover{
+        transform: scale(1.02);
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.6);  
+    }
+
+    .divProjects2{
+        transition: transform 0.5s ease, box-shadow 0.5s ease;
+    }
+
+    .divProjects2:hover{
+        transform: scale(1.04);
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.6);  
     }
 }
 
-@media (max-width:767.98px) {
+/* @media (max-width:767.98px) {
     .skills-container{
         flex-direction: column;
         width: 10vh;
@@ -174,12 +191,9 @@ html,body{
         width: 10vh;
         background-size: contain;
     }
+}  */
 
-    .customHoverButton{
-        width: 23vh;
-    }
-
-    .customWidthForm{
-        width: 100%;
-    }
-}
+/* * {
+    outline: 1px solid red;
+  } */
+  
